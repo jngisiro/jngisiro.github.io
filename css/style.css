@@ -200,7 +200,7 @@ fieldset{
     margin:10px;
 }
 
-hide{
+.hide{
     display: none;
 }
 
@@ -212,7 +212,6 @@ hide{
 
 .tab-wrap a{
     color:#fff;
-    background: #0093D5;
     padding: 5px 10px;
     text-decoration: none;
 }
@@ -222,22 +221,30 @@ hide{
 }
 
 .card{
-    width:100%;
+    width:46%;
     padding:2px 10px;
-    border:1px solid #ccc;
+    border:1px solid #ddd;
     margin-bottom: 20px;
 }
 
 .card-heading h3{
-    margin-bottom: 10px;
     font-weight:lighter;
+}
+
+.card-heading h6{
+    margin-top:5px;
+    color:#808080;
 }
 
 .card-heading h3 span{
     font-size:12px;
     border-radius: 5px;
     color:#fff;
-    padding: 2px 5px;
+    padding: 1px 5px;
+}
+
+.card-heading a{
+    text-decoration: none;
 }
 
 .status-pending { background:#49B749; }
@@ -245,30 +252,55 @@ hide{
 .status-rejected { background:red; }
 
 .card-body{
-      padding: 10px;
+      padding: 5px;
+}
+
+.tab-row{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.card-body p{
+    font-size:15px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.card .proof{
+    display: flex;
+    justify-content: space-around;
+    border-bottom:1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.proof img{
+    width:80%;
+    height: 250px;
 }
 
 .tabbed-widget{
   width:100%;
   position: relative;
-  height:500px;
+  height:auto;
 }
 
 #tab_pending{
     background:#fff;
-    height: 500px;
+    height: auto;
 }
 
 #tab_resolved{
     background:#fff;
     width:100%;
-    height: 500px;
+    height: auto;
 }
 
 #tab_rejected{
     background: #fff;
     width:100%;
-    height: 500px;
+    height: auto;
 }
 
 [id^=tab]  {
@@ -287,7 +319,6 @@ hide{
 }
 
 .card-action{
-    margin: 20px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -305,4 +336,65 @@ hide{
 .card-action button:hover{
     background: #000;
     color:#fff;
+}
+
+#update{
+    margin-top:20px;
+    width:100%;
+    box-shadow: 0 0 5px #ccc inset;
+    height:auto;
+}
+
+#update textarea{
+    height: 200px;
+    width:100%;
+    font-family: Helvetica, sans-serif, Arial;
+    font-size:15px;
+    border:none;
+    border-bottom:1px dashed #ddd;
+}
+
+#update input,textarea{
+    width:100%;
+    border:none;
+    border-bottom: 1px dashed #ddd;
+}
+
+#update textarea:focus{
+    outline:none;
+}
+
+#update input:focus{
+    border:none;
+    outline:none;
+    border-bottom: 1px dashed #bbb;
+}
+
+#update .radio{
+    width:10%;
+    height:15px;
+    margin-left:100px;
+}
+
+#btn{
+    width:100%;
+    height:35px;
+    font-size:18px;
+    border:none;
+    background:#49B749;
+    color:#fff;
+    text-shadow: 0 0 1px #000;
+    cursor:pointer;
+}
+
+.form-set p{
+    width:100px;
+    margin-top:20px;
+}
+
+
+#update select{
+    border:none;
+    border-bottom: 1px solid #ddd;
+    width:100%;
 }
