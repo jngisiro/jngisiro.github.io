@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #000;
+  color: #bbb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-size: 50px;
+}
+
+h1:after {
+  content: ''; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 36%; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc; /* This creates the border. Replace black with whatever color you want. */
+}
+
+#about .content h2:after {
+  content: ''; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 36%; /* Change this to whatever width you want. */
+  padding-top: 10px; /* This creates some space between the element and the border. */
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.sub-title {
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.container {
+  position: absolute;
+  height: 70vh;
+  width: 100%;
+  margin: 0 auto;
+  /* border: 1px solid rgb(255, 112, 0); */
+  background-color: #000;
+  top: 160px;
+  z-index: 1000;
+  /* overflow: hidden; */
+}
+
+.sheet {
+  width: 90%;
+  border: 1px solid #fff;
+  transform: translateY(40px);
+  height: 70vh;
+  border-radius: 5px;
+  background-color: aliceblue;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: 1.4s all ease-in-out;
+}
+
+.bookmark {
+  width: 10%;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  transform: translateY(-30px);
+  margin-left: 20px;
+  border-radius: 5px;
+  padding: 10px 0;
+  cursor: pointer;
+  box-shadow: 0 0 4px #444;
+}
+
+.selected {
+  z-index: 100;
+  color: #fff;
+}
+
+.bookmark:hover {
+  background-color: #ffc000;
+}
+
+/* ---------------------------- PROJECTS ------------------ */
+
+#projects {
+  background-color: rgb(252, 227, 227);
+  z-index: 10;
+}
+
+#projects .bookmark {
+  margin-left: 2%;
+  background-color: rgb(185, 25, 25);
+}
+
+#projects .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: red;
+}
+/* ---------------------------- END OF PROJECTS ------------------ */
+
+/* ---------------------------- SKILL SET ------------------ */
+#languages {
+  text-align: center;
+  background-color: rgb(243, 208, 196);
+}
+
+#languages .bookmark {
+  margin-left: 15%;
+  background-color: orangered;
+}
+
+#languages i {
+  font-size: 40px;
+}
+
+#languages .content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 50px;
+  color: #000;
+}
+
+/* ---------------------- END OF SKILL SET ---------------------*/
+
+/* ---------------------------- EDUCATION ------------------ */
+
+#education {
+  background-color: rgb(226, 204, 162);
+  color: #000;
+}
+
+#education .bookmark {
+  margin-left: 28%;
+  background-color: orange;
+}
+
+#education .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 40px;
+  grid-row-gap: 7px;
+}
+
+#education .content h2:after {
+  content: ''; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  width: 30%; /* Change this to whatever width you want. */
+  padding-top: 3px; /* This creates some space between the element and the border. */
+  margin-bottom: 3px;
+  border-bottom: 1px solid #000; /* This creates the border. Replace black with whatever color you want. */
+}
+
+#education .content h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#education .content p {
+  background-color: #000;
+  color: #fff;
+  max-width: fit-content;
+  padding: 0 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+/*---------------------------- END OF EDUCATION ------------------ */
+
+/* ---------------------------- ABOUT ------------------ */
+
+#about {
+  background-color: rgb(250, 236, 160);
+}
+
+#about .bookmark {
+  margin-left: 41%;
+  background-color: rgb(255, 215, 0);
+}
+
+#about .content {
+  padding: 0 40px;
+}
+
+#about .content h2 {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+#about .content p {
+  color: #000;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+/* ---------------------------- END OF ABOUT ------------------ */
+
+#contact {
+  background-color: rgb(215, 248, 215);
+  color: #000;
+}
+
+#contact .bookmark {
+  margin-left: 54%;
+  background-color: green;
+}
+
+#contact .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 50px;
+  text-align: center;
+}
+
+#contact .content i {
+  font-size: 80px;
+}
+
+#contact .content a {
+  border: 1px solid #000;
+  width: 200px;
+  padding: 20px 0;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s all ease-out;
+}
+
+#contact .content a:hover {
+  transform: scale(1.02);
+}
+
+#contact .content h4 {
+  font-size: 20px;
+}
