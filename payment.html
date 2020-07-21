@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Payment</title>
+    <link rel="stylesheet" href="css/payment.css" />
+  </head>
+  <body>
+    <h1>Fill in Your card information</h1>
+
+    <div class="form">
+      <label for="amount">
+        Amount
+        <input
+          type="text"
+          id="amount"
+          required
+          placeholder="Amount"
+          value="9.6"
+        />
+      </label>
+
+      <label for="cardName">
+        Card Names
+        <input
+          type="text"
+          id="cardName"
+          required
+          placeholder="Card Names"
+          value="Paul Ngisiro"
+        />
+      </label>
+
+      <label for="cardNumber">
+        Card Number
+        <input type="text" id="cardNumber" required placeholder="Card Number" />
+      </label>
+
+      <label for="cvv">
+        Verification Code
+        <input type="text" id="cvv" required placeholder="CVV" />
+      </label>
+
+      <label for="address">
+        Billing Address
+        <input
+          type="text"
+          value="9735 SMOKY HOLLOW AVE"
+          id="address"
+          required
+          placeholder="Billing Address"
+        />
+      </label>
+
+      <label for="Month">
+        Month
+        <input type="text" value="02" id="month" required placeholder="Month" />
+      </label>
+
+      <label for="Year">
+        Year
+        <input value="2021" type="text" id="year" required placeholder="Year" />
+      </label>
+
+      <label for="email">
+        Email
+        <input
+          value="solomon@inspirefilmz.com"
+          type="text"
+          id="email"
+          required
+          placeholder="Email"
+        />
+      </label>
+
+      <label for="city">
+        City
+        <input
+          type="text"
+          id="city"
+          value="New York"
+          required
+          placeholder="City"
+        />
+      </label>
+
+      <label for="State">
+        State
+        <input
+          type="text"
+          id="state"
+          value="New York"
+          required
+          placeholder="State"
+        />
+      </label>
+
+      <label for="zip">
+        Zip Code
+        <input type="text" id="zip" value="10034" required placeholder="zip" />
+      </label>
+
+      <label for="country">
+        Country
+        <input
+          type="text"
+          id="country"
+          value="USA"
+          required
+          placeholder="country"
+        />
+      </label>
+
+      <label for="phone">
+        Phone Number
+        <input
+          type="text"
+          id="phone"
+          value="0778659493"
+          required
+          placeholder="phone"
+        />
+      </label>
+    </div>
+
+    <button onclick="makePayment()">Process Payment</button>
+
+    <script src="js/payment.js"></script>
+  </body>
+</html>
